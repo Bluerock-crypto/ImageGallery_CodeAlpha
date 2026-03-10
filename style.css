@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    border: border-box;
+}
+body{
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery_container{
+    text-align: center;
+    color: white;
+    padding:30px;
+}
+h1{
+    margin:bottom;
+    font-size:36px;
+}
+
+.main-image-container{
+    position:relative;
+    display:inline-block;
+}
+#mainImage{
+    width:800px;
+    height:500px;
+    border-radius:10px;
+    object-fit:cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+.prev-btn, .next-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background-color:rgba(0,0,0,0.5);
+    border:none;
+    color:white;
+    font-size:25px;
+    padding:15px;
+    cursor:pointer;
+    border-radius:50%;
+}
+.prev-btn{ position: absolute; left:15px;}
+.next-btn{ position: absolute; right:15px;}
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.thumbnails img:hover {
+    opacity: 1;
+}
